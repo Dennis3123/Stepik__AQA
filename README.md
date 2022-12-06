@@ -1,2 +1,2 @@
 # Stepik__AQA
-First repository
+My first repository
