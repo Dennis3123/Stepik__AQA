@@ -4,11 +4,7 @@ from selenium.webdriver.common.by import By
 link = "http://selenium1py.pythonanywhere.com/"
 
 
-@pytest.mark.parametrize('language', ["en"])
-def test_guest_should_see_login_link(browser, language):
-    link = f"http://selenium1py.pythonanywhere.com/{language}/"
-    browser.get(link)
-    browser.find_element(By.CSS_SELECTOR, "#login_link")
+
 
 
 def go_to_login_page(browser):
