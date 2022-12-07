@@ -12,7 +12,7 @@ def browser():
     browser.quit()
 
 
-@pytest.mark.parametrize('language', ["en"])
+@pytest.mark.parametrize('--language', default='en')
 def test_guest_should_see_login_link(browser, language):
     link = f"/{language}/"
     browser.get(link)
